@@ -1,0 +1,28 @@
+{
+  "name": "mocha-yadda",
+  "version": "0.0.1",
+  "description": "Integrate yadda features and steps with mocha tests.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commandline/mocha-yadda.git"
+  },
+  "keywords": [
+    "BDD",
+    "Test",
+    "Mocha",
+    "yadda"
+  ],
+  "author": "Thomas Gideon",
+  "license": "LGPL3",
+  "bugs": {
+    "url": "https://github.com/commandline/mocha-yadda/issues"
+  },
+  "homepage": "https://github.com/commandline/mocha-yadda",
+  "dependencies": {
+    "yadda": "^0.15.2"
+  }
+}
