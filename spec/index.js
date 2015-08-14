@@ -3,6 +3,10 @@ var expect = require('chai').expect;
 var MochaYadda = require('../lib');
 
 describe('mocha-yadda', function() {
+    var libloader = function() {
+        return [require('./library')];
+    };
+
     it('initializes', function() {
 
         expect(MochaYadda).not.to.be.undefined;
@@ -15,9 +19,10 @@ describe('mocha-yadda', function() {
     });
 
     it('accepts a library loader', function() {
-        var libloader = function() {
-            return [require('./library')];
-        };
         MochaYadda.fdescribe('./spec/sample.feature', libloader, {rethrow: true});
+    });
+
+    it('skips without error', function() {
+        MochaYadda.fdescribe.skip('./spec/sample.feature', libloader);
     });
 });
