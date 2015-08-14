@@ -18,4 +18,12 @@ describe('loader', function() {
         })
         .nodeify(done);
     });
+
+    it('loads from a url', function(done) {
+        Loader.http.load('http://raw.githubusercontent.com/commandline/mocha-yadda/master/spec/sample.feature')
+        .then(function(featureFile) {
+            expect(featureFile).not.to.be.undefined;
+        })
+        .nodeify(done);
+    });
 });
