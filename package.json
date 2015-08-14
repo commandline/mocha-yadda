@@ -1,6 +1,6 @@
 {
   "name": "mocha-yadda",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Integrate yadda features and steps with mocha tests.",
   "main": "lib/index.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "yadda"
   ],
   "author": "Thomas Gideon",
-  "license": "LGPL3",
+  "license": "LGPL-3.0",
   "bugs": {
     "url": "https://github.com/commandline/mocha-yadda/issues"
   },
