@@ -1,4 +1,5 @@
 # mocha-yadda
+[![npm version](https://badge.fury.io/js/mocha-yadda.svg)](http://badge.fury.io/js/mocha-yadda)
 Module to integrate yadda with mocha for both browser and node.js tests. The yadda project includes in its docs and examples a little bit of glue code to accomplish this integration. This package tries to build on and improve that, offering some conveniences for testing in different environments like loading Gherkin files from a Karma instance or the local file system when running directly with Mocha.
 
 To use, create a test source that Mocha will find and execute of the form:
