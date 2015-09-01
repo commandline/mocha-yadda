@@ -1,6 +1,6 @@
 {
   "name": "mocha-yadda",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Integrate yadda features and steps with mocha tests.",
   "main": "lib/index.js",
   "scripts": {
