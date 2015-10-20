@@ -6,6 +6,11 @@ var English = require('yadda').localisation.English;
 module.exports = (function() {
     return English.library()
 
+    .define('a feature to have a title', function(next) {
+        expect(this.ctx.featureTitle, 'context should have a feature title.');
+        next();
+    })
+
     .define('a file to be read', function (next) {
         this.ctx.someValue = 'something';
         next();
