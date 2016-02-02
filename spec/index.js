@@ -19,11 +19,19 @@ describe('mocha-yadda', function() {
     });
 
     it('skips non-matching tag on feature', function() {
-        MochaYadda.fdescribe('./spec/sample.feature', [require('./fail')], {tags: ['sample'], rethrow: true});
+        MochaYadda.fdescribe('./spec/taggedFeature.feature', [require('./fail')], {tags: ['example'], rethrow: true});
     });
 
     it('skips non-matching tag on scenario', function() {
-        MochaYadda.fdescribe('./spec/sample.feature', [require('./fail')], {tags: ['example'], rethrow: true});
+        MochaYadda.fdescribe('./spec/taggedScenario.feature', [require('./fail')], {tags: ['example'], rethrow: true});
+    });
+
+    it('runs matching tag on feature', function() {
+        MochaYadda.fdescribe('./spec/taggedFeature.feature', [require('./library')], {tags: ['sample'], rethrow: true});
+    });
+
+    it('runs matching tag on scenario', function() {
+        MochaYadda.fdescribe('./spec/taggedScenario.feature', [require('./library')], {tags: ['sample'], rethrow: true});
     });
 
     it('accepts a library loader', function() {
