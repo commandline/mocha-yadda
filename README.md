@@ -15,6 +15,7 @@ fdescribe also accepts an options object.
 * ctx: feature wide context, for instance to share some stubs or other necessary info or resources
 * beforeFeature/afterFeature: hooks that will run before/after the feature, will bind to the ctx object in provided
 * beforeScenario/afterScenario: hooks that will run before/after each scenario, will bind to the ctx object in provided
+* tags: an array of strings, only a feature or scenario that has a matching tag annotation will be run (as of 0.2.0)
 
 fdescribe supports .only and .skip, like mocha, though .only doesn't interact with any plain Mocha tests. .only will limit execution among a group of mocha-yadda features so it best used with mocha's ability to limit test by files or regexes to limit to just yadda based tests.
 
