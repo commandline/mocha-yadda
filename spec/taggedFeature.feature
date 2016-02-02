@@ -1,5 +1,5 @@
 @Sample
-Feature: A sample feature
+Feature: A sample tagged feature
 
     Scenario: The one that is totally fake.
         Given a feature to have a title

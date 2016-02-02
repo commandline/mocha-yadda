@@ -31,7 +31,8 @@ describe('mocha-yadda', function() {
     });
 
     it('runs matching tag on scenario', function() {
-        MochaYadda.fdescribe('./spec/taggedScenario.feature', [require('./library')], {tags: ['sample'], rethrow: true});
+        MochaYadda.fdescribe('./spec/taggedScenario.feature', [require('./library')],
+                             {tags: ['sample'], rethrow: true});
     });
 
     it('accepts a library loader', function() {

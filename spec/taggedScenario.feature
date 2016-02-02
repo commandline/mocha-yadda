@@ -1,4 +1,4 @@
-Feature: A sample feature
+Feature: A sample feature with a tagged scenario
 
     @Sample
     Scenario: The one that is totally fake.
